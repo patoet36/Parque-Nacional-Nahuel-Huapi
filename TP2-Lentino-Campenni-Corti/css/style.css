@@ -1,0 +1,209 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------Encabezado--------------------------*/
+
+#encabezado{
+    width: 100%;
+    background-color: #57743b;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .logoTitulo img{
+    margin: 10px 15px 4px 30px;
+    align-items: left;
+    width: 100px;
+    height: 100px;
+            
+    }
+}
+
+/*------Menu-------*/
+
+.menu{
+    padding: 10px;
+    width: 100%;
+    background-color: #57743b;
+
+    text-decoration: none;
+    list-style: none;
+
+    ul{
+        font-size: 0;
+    }
+    li{
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+        position: relative;
+        font-size: 14px;
+    }
+    li a{
+        color: black;
+        text-decoration: none;
+    }
+    ul ul{
+        position: absolute;
+        width: 100%;
+        display: none;
+        background-color: #57743b;
+    }
+    ul ul li{
+        display: block;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+
+    li li{
+        display: flex;
+        width: 100%;
+    }
+
+
+}
+
+nav ul li:hover{
+    border-bottom: solid 5px #66EA54;
+}
+
+/*-------------------------Contenido------------------------------*/
+
+body{
+    
+    background-color: #5b9a42;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'fotoLago parrafoLago parrafoLago'
+        'parrafoMontaña parrafoMontaña fotoMontaña';
+    width: 100%;
+    align-items: center;
+}
+
+
+.parrafoLago{
+    grid-area: parrafoLago;
+}
+.fotoLago{
+    grid-area: fotoLago;
+}
+.fotoLago img{
+    width: 816px;
+    height: 500px;
+}
+.parrafoMontaña{
+    grid-area: parrafoMontaña;
+}
+.fotoMontaña img{
+    width: 530px;
+    height: 450px;
+    grid-area: fotoMontaña;
+}
+    
+
+    .imagenPrinc img{
+        width: 100%;
+        height: 15%;
+    }
+    
+    .parrafo1{
+        margin: 10px 50px 20px 50px;
+        text-align: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    p{
+        margin: 10px 50px 20px 50px;
+        text-align: center;
+        align-items: center;
+    }
+    h2{
+        margin: 20px;
+    }
+    
+    #googleMaps{
+        align-items: center;
+        text-align: center;
+    }
+    
+    #historia{
+        align-items: center;
+        text-align: center;
+    }
+    .extension img{
+        height: 600px;
+        width: 700px;
+    }
+    
+    .gradient{
+        height: 100px;
+        width: 100%;
+    
+        background-image: linear-gradient(to top,#479429, #5b9a42);
+    }
+
+
+/*-------Pie--------*/
+
+#pie{
+    padding: 30px 0px 30px 0;
+    background-color: #479429;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 6%;
+        align-items: center;
+    }
+
+    
+
+    .nosotros{
+        margin: 0 0 20px 40px;
+        text-align: left;
+    }
+    .instagram{
+        width: 42px;
+        height: 40px;
+    }
+    .facebook{
+        width: 40px;
+        height: 40px;
+    }
+    .tiktok{
+        width: 40px;
+        height: 40px;
+    }
+    .twitter{
+        width: 60px;
+        height: 40px;
+    }
+    .whatsapp{
+        width: 40px;
+        height: 40px;
+    }
+    .correo{
+        width: 60px;
+        height: 40px;
+    }
+    .copy{
+        text-align: center;
+    }
+}
+
